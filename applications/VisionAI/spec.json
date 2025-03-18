@@ -5,7 +5,7 @@
             "properties": {
                 "chart": {
                     "repo": "yingruitestacr.azurecr.io/helm/vision-ai",
-                    "version": "0.6.0",
+                    "version": "0.7.0",
                     "wait": true,
                     "timeout": "5m"
                 }
