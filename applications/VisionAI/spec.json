@@ -1,0 +1,15 @@
+{
+    "components": [{
+            "name": "vision-ai",
+            "type": "helm.v3",
+            "properties": {
+                "chart": {
+                    "repo": "yingruitestacr.azurecr.io/helm/vision-ai",
+                    "version": "0.6.0",
+                    "wait": true,
+                    "timeout": "5m"
+                }
+            }
+        }
+    ]
+}
