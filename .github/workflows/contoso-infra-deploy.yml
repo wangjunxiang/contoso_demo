@@ -19,8 +19,8 @@ jobs:
           Start-Sleep 10
         shell: pwsh
 
-  change-safety-enforcement:
-    name: ChangeSafety Enforcement
+  deploy-with-approvals:
+    name: Deploy with Approvals
     runs-on: windows-latest
     needs: prepare-deployment
     if: ${{ success() && !cancelled() }}
@@ -42,16 +42,7 @@ jobs:
           # Placeholder
           Start-Sleep 321
         shell: pwsh
-
-  deploy-via-workload-orchestrator:
-    name: Deploy via Workload Orchestrator
-    runs-on: windows-latest
-    needs: change-safety-enforcement
-    if: ${{ success() && !cancelled() }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Deploy application via Workload Orchestrator
+      - name: Deploy application
         run: |
           # Placeholder
           Start-Sleep 16
