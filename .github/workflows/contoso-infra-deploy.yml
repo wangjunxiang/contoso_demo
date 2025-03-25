@@ -45,5 +45,5 @@ jobs:
       - name: Deploy application
         run: |
           # Placeholder
-          Start-Sleep 16
+          Start-Sleep 15
         shell: pwsh
